@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Maven Pro', sans-serif;
@@ -7,14 +8,14 @@
 
 
 .conteiner {
-   width: 90%;
-   max-width: 1000px;
-   margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(4 , auto);
-    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+
 }
 
 body {
@@ -26,72 +27,100 @@ body {
     height: auto;
 
 }
- .navbar{
+
+.navbar {
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
-   
+
 }
-.bar{
-    
+
+.bar {
+
     display: flex;
     gap: 22px;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .conteiner ul li {
     display: inline-block;
 }
 
-.header{
+.header {
     background-color: rgb(76, 75, 22);
     grid-column-start: 1;
     grid-column-end: 4;
     display: flex;
     justify-content: space-between;
 }
-.form{
+
+.form {
     display: grid;
     align-items: center;
     justify-content: center;
-    
+
 
 }
+
 .form h3 {
     text-align: center;
     text-decoration: underline;
     text-underline-offset: 10px;
 }
-.name{
+
+.name {
     margin-top: 20px;
 }
-.button_check{
+
+.button_check {
     display: flex;
     justify-content: end;
 }
-.form label{
+
+.form label {
     font-size: larger;
 }
+
 input:hover {
     cursor: pointer;
 }
-.form_container{
+
+.form_container {
     justify-content: space-around;
-    display: inline-block;
-    background-color:rgb(231, 177, 10);
-    width: 1000px;
+    display: flex;
+    background-color: rgb(231, 177, 10);
+    width: 55%;
 }
+
 .cform {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
-.textarea{
+
+.textarea {
     resize: none;
 }
-.footer{
-    background-color: rgb(96, 108, 93); 
+
+.footer {
+    background-color: rgb(96, 108, 93);
     display: inline-block;
-    position:fixed; bottom:0; z-index:999999;
+    position: fixed;
+    bottom: 0;
+    z-index: 999999;
     text-align: center;
-   
+
+}
+
+a {
+    color: rgb(16, 15, 97);
+    text-decoration: none;
+}
+@media screen and (max-width: 967px) {
+    .form_container {
+        justify-content: space-around;
+        display: flex;
+        background-color: rgb(231, 177, 10);
+        width: 90%;
+    }
 }

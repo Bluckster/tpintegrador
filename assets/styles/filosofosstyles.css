@@ -117,10 +117,16 @@ p{
     color:#FAF0D7
 }
 .parrafo2{
+    display: flex;
+    justify-content: center;
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
     
 }
 .footer{
     background-color: rgb(96, 108, 93);
     position:fixed; bottom:0; z-index:999999;
 }
+a {
+    color: rgb(16, 15, 97); text-decoration: none;}
